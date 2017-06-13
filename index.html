@@ -1,4 +1,15 @@
 
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>간단한 지도 표시하기</title>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=gm3shZXysCdTWzZOxEiJ"></script>
+</head>
+<body>
+
 <center>
     <img src="image/cover.jpg" />
     <img src="image/contents.jpg" />
@@ -10,7 +21,9 @@
 
 <iframe src="https://docs.google.com/presentation/d/1_V5BDu-FedJT402HibnuBu451G9JfKfsW-_cQcXv1ew/embed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
+<br>
 
+<div id="map" style="width:100%;height:400px;"></div>
 
 <script>
     var HOME_PATH = window.HOME_PATH || '.';
@@ -34,3 +47,5 @@
 
     var marker = new naver.maps.Marker(markerOptions);
 </script>
+</body>
+</html>
