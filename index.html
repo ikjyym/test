@@ -9,3 +9,28 @@
 <br>
 
 <iframe src="https://docs.google.com/presentation/d/1_V5BDu-FedJT402HibnuBu451G9JfKfsW-_cQcXv1ew/embed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+
+<script>
+    var HOME_PATH = window.HOME_PATH || '.';
+    var position = new naver.maps.LatLng(37.3849483, 127.1229117);
+
+    var map = new naver.maps.Map('map', {
+        center: position,
+        zoom: 14
+    });
+
+    var markerOptions = {
+        position: position.destinationPoint(90, 15),
+        map: map,
+        icon: {
+            url: HOME_PATH +'/img/example/sally.png',
+            size: new naver.maps.Size(50, 52),
+            origin: new naver.maps.Point(0, 0),
+            anchor: new naver.maps.Point(25, 26)
+        }
+    };
+
+    var marker = new naver.maps.Marker(markerOptions);
+</script>
